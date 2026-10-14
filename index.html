@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe8f2">
+<meta name="description" content="Eda'ya Sami'den tatlı bir soru 💗 CORTIS ve kedilerle dolu romantik bir sürpriz.">
+<title>Eda, benimle çıkar mısın? 💗</title>
+<style>
+:root{--pink:#f65c9c;--deep:#c52b70;--ink:#71354f;--paper:#fffafd}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:"Trebuchet MS",system-ui,sans-serif;background:linear-gradient(135deg,#ffd9e9,#fff5fa 48%,#ffdbea);overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+.scrapbook{display:grid;grid-template-columns:minmax(150px,1fr) minmax(300px,560px) minmax(150px,1fr);gap:clamp(12px,2vw,30px);max-width:1500px;margin:auto;padding:22px}
+.side{display:flex;flex-direction:column;gap:18px;min-width:0}
+.photo{position:relative;background:white;padding:8px 8px 25px;box-shadow:0 7px 20px #9d3d671c;border:1px solid #fff;transform:rotate(-2deg);border-radius:3px}
+.photo:nth-child(even){transform:rotate(2.5deg)}
+.photo img{display:block;width:100%;height:clamp(110px,17vw,220px);object-fit:cover;background:#ffe7f1}
+.photo figcaption{text-align:center;font-size:clamp(.75rem,1.1vw,.95rem);font-weight:700;margin-top:8px;color:#a43c6a}
+.sticker{font-size:clamp(22px,3vw,42px);text-align:center;filter:drop-shadow(0 3px 2px #d6539022)}
+.note{background:#fff8fc;padding:14px;border-radius:4px;box-shadow:0 5px 18px #9d3d6717;text-align:center;font-family:"Trebuchet MS",sans-serif;font-style:italic;transform:rotate(2deg);line-height:1.45}
+.center{align-self:center;text-align:center;min-width:0;background:#ffffffdf;border:1px solid white;border-radius:30px;padding:clamp(22px,4vw,42px);box-shadow:0 20px 55px #bc4d7e24;backdrop-filter:blur(8px)}
+.topline{letter-spacing:.24em;font-size:.78rem;font-weight:800;color:#a34870}
+.bigheart{font-size:clamp(48px,7vw,72px);margin:16px 0 4px;animation:beat 1.4s infinite}
+@keyframes beat{50%{transform:scale(1.12)}}
+h1{font-size:clamp(2rem,4.7vw,3.3rem);line-height:1.08;letter-spacing:-.04em;margin:12px 0 18px;color:#b82668}
+p{line-height:1.65}
+.intro{font-size:1.04rem}
+.buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:26px 0 8px}
+.btn{border:0;border-radius:999px;padding:14px 24px;font-weight:800;min-height:48px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.yes{background:linear-gradient(135deg,#ff75ad,#e33d88);color:white;box-shadow:0 8px 20px #e33d8844}
+.no{background:#fff0f6;color:#9f416a;border:1px solid #ffd0e2}
+.hint{min-height:50px;color:#b23d75;font-weight:700;font-size:.94rem}
+.hidden{display:none!important}
+.success h1{font-size:clamp(2rem,4.4vw,3rem)}
+.cat-dance-gif{display:block;width:min(100%,280px);height:220px;object-fit:contain;margin:10px auto;border-radius:18px;filter:drop-shadow(0 10px 5px #b945771c);background:#fff0f6}
+.confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:4}
+.floaty{position:absolute;bottom:-40px;animation:rise 4.5s linear forwards}
+@keyframes rise{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+.bottom-cat{width:100%;height:150px;object-fit:cover;border-radius:18px;margin:10px 0;box-shadow:0 8px 22px #ba497a22}
+.credit{font-size:.74rem;opacity:.65;margin-top:24px}
+@media(max-width:760px){
+ .scrapbook{grid-template-columns:1fr;padding:12px;gap:14px}
+ .center{grid-row:1;padding:26px 20px;width:100%}
+ .side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .side .photo img{height:clamp(115px,32vw,190px);width:100%;object-fit:cover}
+ .side .note{display:flex;align-items:center;justify-content:center;min-height:90px}
+ .side.left{grid-row:2}.side.right{grid-row:3}
+ .photo,.photo:nth-child(even){transform:rotate(0deg)}
+ .topline{letter-spacing:.14em}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="confetti" id="confetti" aria-hidden="true"></div>
+<div class="scrapbook">
+  <aside class="side left" aria-label="CORTIS ve sevimli kedi fotoğrafları">
+    <figure class="photo"><img loading="lazy" src="https://i.pinimg.com/474x/f2/16/a8/f216a8d8a6384839be0d5b9ddf4863c5.jpg?width=900&quality=80&format=jpeg&auto=webp&fit=bounds&bg-color=fff" alt="CORTIS grup fotoğrafı" onerror="this.onerror=null;this.src='https://cortis-official.jp/'"><figcaption>CORTIS ♡</figcaption></figure>
+    <figure class="photo"><img loading="lazy" src="https://assets.lummi.ai/assets/QmXjVv4iyQfCPGKmMNokbMHV9DYcxcG9PDdy6cmPxfpAVc" alt="Battaniye üzerinde sevimli yavru kedi"><figcaption>minnoş kedi 🐾</figcaption></figure>
+    <figure class="photo"><img loading="lazy" src="https://adoptanimaux.fr/images/chat_category.webp" alt="Beyaz battaniyede tatlı yavru kedi"><figcaption>çok tatlııı 🥹</figcaption></figure>
+    <div class="sticker" aria-hidden="true">🎀 💗 🐱</div>
+  </aside>
+
+  <main class="center">
+    <div class="topline">SAMI　♡　EDA</div>
+    <section id="question">
+      <div class="bigheart" aria-hidden="true">💗</div>
+      <h1>Eda,<br>benimle çıkar mısın?</h1>
+      <p class="intro">Seninle her an daha güzel… Birlikte güzel anılar biriktirelim mi? 💌</p>
+      <div class="sticker" aria-hidden="true">🐾　💕　🐾</div>
+      <div class="buttons">
+        <button class="btn yes" id="yesBtn">Evet! 💖</button>
+        <button class="btn no" id="noBtn">Bir düşüneyim 🙈</button>
+      </div>
+      <p class="hint" id="hint" aria-live="polite"></p>
+      <p class="credit">CORTIS ve kedi severlere özel, Sami'den Eda'ya ✨</p>
+    </section>
+
+    <section id="success" class="success hidden" aria-live="polite">
+      <div class="bigheart">💞</div>
+      <h1>YAŞASIN EDA! 🥹💗</h1>
+      <p>Sami şu an mutluluktan uçuyor! Kutlamaya özel dansçı kedimiz sahnede:</p>
+      <img class="cat-dance-gif" src="https://media.giphy.com/media/3oEjHZM8cCfQ6eORgY/giphy.gif" alt="Dans eden gerçek kedi GIF’i" loading="eager" onerror="this.onerror=null;this.src='https://media.giphy.com/media/yScooNo2jY6vQ8Vx8d/giphy.gif'">
+      <p><strong></strong><br>CORTIS, kediler ve bol bol kalp eşliğinde… 💗</p>
+      <img class="bottom-cat" src="https://assets.lummi.ai/assets/QmXjVv4iyQfCPGKmMNokbMHV9DYcxcG9PDdy6cmPxfpAVc" alt="Kutlamaya eşlik eden tatlı yavru kedi">
+      <button class="btn yes" id="againBtn">Bir daha kutla! 🎉</button>
+    </section>
+  </main>
+
+  <aside class="side right" aria-label="CORTIS ve sevimli kedi fotoğrafları">
+    <figure class="photo"><img loading="lazy" src="https://i.pinimg.com/736x/cf/f2/40/cff2408aa452faf7b911b25a952c0f9e.jpg?width=900&quality=80&format=jpeg&auto=webp&fit=bounds&bg-color=fff" alt="CORTIS grup fotoğrafı" onerror="this.onerror=null;this.src='https://cortis-official.jp/'"><figcaption>CORTIS forever ✨</figcaption></figure>
+    <figure class="photo"><img loading="lazy" src="https://i.pinimg.com/736x/47/6b/21/476b217db09910b0fd9cc37648428552.jpg" alt="Birbirine sokulmuş iki yavru kedi"><figcaption>iki minnoş 🐱</figcaption></figure>
+    <div class="note">You make my heart smile ♡</div>
+    <figure class="photo"><img loading="lazy" src="https://assets.st-note.com/production/uploads/images/261445313/rectangle_large_type_2_8adb339cdbcaa3c3563b96707a0a16cc.png?fit=bounds&quality=85&width=1280" alt="Yan yana duran üç sevimli yavru kedi"><figcaption>tatlılık seviyesi: %100</figcaption></figure>
+    <div class="sticker" aria-hidden="true">💘 ✨ 🐈</div>
+  </aside>
+</div>
+<script>
+const question=document.getElementById('question'),success=document.getElementById('success');
+const hint=document.getElementById('hint'),noBtn=document.getElementById('noBtn');
+const yesBtn=document.getElementById('yesBtn');
+const messages=[
+ 'Emin misin Eda? Sana bol bol gülümseme sözü veriyorum 🥺',
+ 'Bir kahve, tatlı bir sohbet ve minnoş kediler? ☕🐱',
+ 'CORTIS bile bu cevabı merak ediyor! 💗',
+ 'Bir şans versek nasıl olur? 🌷',
+ 'Kedi patisiyle evet demeni öneriyor 🐾'
+];let mi=0;
+noBtn.addEventListener('click',()=>{
+ hint.textContent=messages[mi%messages.length];mi++;
+ noBtn.textContent=['Biraz daha düşüneyim 🙈','Belki? 🥹','Son kararım mı? 💭'][mi%3];
+ yesBtn.animate([{transform:'scale(1)'},{transform:'scale(1.08)'},{transform:'scale(1)'}],{duration:400});
+});
+function celebrate(){question.classList.add('hidden');success.classList.remove('hidden');launch(32);window.scrollTo({top:0,behavior:'smooth'});}
+yesBtn.addEventListener('click',celebrate);
+document.getElementById('againBtn').addEventListener('click',()=>launch(35));
+function launch(n){
+ const box=document.getElementById('confetti'),symbols=['💗','💖','💕','🐾','✨','🐱'];
+ for(let i=0;i<n;i++){const el=document.createElement('span');el.className='floaty';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+ el.style.left=Math.random()*100+'%';el.style.fontSize=(18+Math.random()*25)+'px';el.style.animationDuration=(3+Math.random()*3)+'s';el.style.animationDelay=Math.random()*.5+'s';
+ box.appendChild(el);el.addEventListener('animationend',()=>el.remove(),{once:true});}
+}
+</script>
+</body>
+</html>
